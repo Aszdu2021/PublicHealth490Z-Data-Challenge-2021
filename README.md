@@ -1,7 +1,7 @@
 # PublicHealth490Z-Data-Challenge-2021
 This is the Statistics Fall Data Challenge 2021 of Food Access Research done by group H for Public Health 490Z in Fall 2021 at UMass Amherst as a course project.
 
-We mainly use the “CA” sheet in the dataset and focus on "lahunv1", "lahunv1share", "tractHUNV", "HUNVFlag", "lahunv1", "lahunv1share", "lahunv10", "lahunv10share", "lasnap1", "lasnap1share", "lasnap10", "lasnap10share", and "tractSNAP". We aim to correlate the total count of housing units without a vehicle in tract and the total count of housing units receiving Supplemental Nutrition Assistance Program(SNAP) benefits in tract and the group of low-income communities to the change of facing food insecurity. All the datasets are available here: https://thisisstatistics.org/
+We mainly use the “CA” sheet in the dataset and focus on "lahunv1", "lahunv1share", "tractHUNV", "HUNVFlag", "lahunv1", "lahunv1share", "lahunv10", "lahunv10share", "lasnap1", "lasnap1share", "lasnap10", "lasnap10share", and "tractSNAP". We aim to correlate the total count of housing units without a vehicle in tract and the total count of housing units receiving Supplemental Nutrition Assistance Program(SNAP) benefits in tract and the group of low-income communities to the change of facing food insecurity. All the datasets are available here: https://zzlalo.notion.site/zzlalo/Fall-Data-Challenge-2021-Getting-Started-eb79bc77b34445b697d4c8e8d2bbbd42
 
 **Null hypothesis:**
 There is no relationship between access to a vehicle, receiving SNAP, and the chance of facing food insecurity
