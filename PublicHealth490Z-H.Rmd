@@ -105,6 +105,44 @@ cor(df$TractSNAP, df$TractLOWI)
 cor(df$TractHUNV, df$TractLOWI)
 cor(df$HUNVFlag, df$TractLOWI)
 ```
-
+```{r}
+df <- CA_all_data %>%
+  group_by(LATracts1) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(pctg = `n` / sum(`n`)) %>%
+  arrange(pctg) %>%
+  mutate(labels = scales::percent(pctg))
+  
+  ggplot(df, aes(x = "", 
+                 y = pctg, 
+                 fill = LATracts1)) + 
+                 geom_col() + 
+                 geom_label_repel(aes(label = labels),
+                                  posi = position_stack(vjust = 0.1),
+                                  show.legend = FALSE) +
+                 coord_polar(theta = "y")
+  
+df <- CA_all_data %>%
+  group_by(LATracts10) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(pctg = `n` / sum(`n`)) %>%
+  arrange(pctg) %>%
+  mutate(labels = scales::percent(pctg))
+  
+  ggplot(df, aes(x = "", 
+                 y = pctg, 
+                 fill = LATracts10)) + 
+                 geom_col() + 
+                 geom_label_repel(aes(label = labels),
+                                  posi = position_stack(vjust = 0.1),
+                                  show.legend = FALSE) +
+                 coord_polar(theta = "y")
+  urban_1mile = 0.23*0.92
+  rural_1mile = 0.23*(1-0.92)
+  urban_10miles = 0.01*0.92
+  rural_10miles = 0.01*(1-0.92)
+```
 
 
