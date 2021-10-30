@@ -106,6 +106,13 @@ cor(df$TractHUNV, df$TractLOWI)
 cor(df$HUNVFlag, df$TractLOWI)
 ```
 ```{r}
+###import dataset after delete all null in sheet
+dfnoNull <- read_excel("This is no null Statistics Fall Data Challenge 2021 Dataset_ Food Access Research Atlas Data 2019-ASAFDC 2021.xlsx", sheet = 8)
+###cor of lasnap1 and 10
+cor(dfnoNull$lasnap1, mylist$TractLOWI)
+cor(dfnoNull$lasnap10, mylist$TractLOWI)
+```
+```{r}
 df <- CA_all_data %>%
   group_by(LATracts1) %>%
   count() %>%
